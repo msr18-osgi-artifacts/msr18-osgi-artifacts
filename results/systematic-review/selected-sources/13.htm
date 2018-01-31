@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en-US"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en-US"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://www.osgi.org/xmlrpc.php" />
+	<!--[if IE]><script src="https://www.osgi.org/wp-content/themes/magazine-basic/library/js/html5.js"></script><![endif]-->
+
+<script type='text/javascript'>
+if( $(window).width() > 960 ) {
+     $.getScript('https://www.osgi.org/wp-content/themes/magazine-basic-child-305/js/floatmenu.js');
+}
+</script>
+
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-801425-1']);
+  _gaq.push(['_setDomainName', 'osgi.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+ <script>
+            var b = document.documentElement;
+              b.setAttribute('data-useragent',  navigator.userAgent);
+              b.setAttribute('data-platform', navigator.platform );
+              b.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'');
+        </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script>
+$(document).ready(function() {
+   $('aside h3').each(function() {
+      var txt = $(this).html();
+      var index = txt.indexOf(' ');
+      if (index == -1) {
+         index = txt.length;
+      }
+      $(this).html('<span>' + txt.substring(0, index) + '</span>' + txt.substring(index, txt.length));
+   });
+ });
+</script>
+<script>
+function callback() {
+    $(".memberslide").append('<a class="join" href="https://www.osgi.org/join/">How to join</a>');
+};
+$(document).ready(function () {
+    window.setTimeout(callback, 100);
+});
+</script>
+	<title>Guidelines &#8211; OSGi™ Alliance</title>
+<style type="text/css">
+.fa-slideshow.slider-loading{
+	background-image:url( https://www.osgi.org/wp-content/plugins/featured-articles-lite/assets/front/images/loading.gif )!important;
+	background-position:center center!important;
+	background-repeat:no-repeat!important;
+	background-color:#000!important;
+}
+.fa-slideshow.slider-loading :nth-child(odd),
+.fa-slideshow.slider-loading :nth-child(even){
+	visibility:hidden!important;
+}
+</style>		
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="OSGi™ Alliance &raquo; Feed" href="https://www.osgi.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="OSGi™ Alliance &raquo; Comments Feed" href="https://www.osgi.org/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.osgi.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='cnss_font_awesome_css-css'  href='https://www.osgi.org/wp-content/plugins/easy-social-icons/css/font-awesome/css/font-awesome.min.css?ver=4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='cnss_css-css'  href='https://www.osgi.org/wp-content/plugins/easy-social-icons/css/cnss.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsm_ac_pro-font-awesome-front-css'  href='https://www.osgi.org/wp-content/plugins/accordion-pro/assets/css/font-awesome/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsm_ac_pro_bootstrap-front-css'  href='https://www.osgi.org/wp-content/plugins/accordion-pro/assets/css/bootstrap-front.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsm_ac_pro_animate-css'  href='https://www.osgi.org/wp-content/plugins/accordion-pro/assets/css/animate.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css'  href='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/css/slick.css?ver=20170912' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/css/font-awesome.min.css?ver=20170912' type='text/css' media='all' />
+<link rel='stylesheet' id='remodal-css'  href='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/css/remodal.css?ver=20170912' type='text/css' media='all' />
+<link rel='stylesheet' id='remodal-default-theme-css'  href='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/css/remodal-default-theme.css?ver=20170912' type='text/css' media='all' />
+<link rel='stylesheet' id='sp-testimonial-pro-style-css'  href='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/css/style.css?ver=20170912' type='text/css' media='all' />
+<link rel='stylesheet' id='sp-testimonial-pro-responsive-css'  href='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/css/responsive.css?ver=20170912' type='text/css' media='all' />
+<link rel='stylesheet' id='sp-testimonial-pro-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='news-style-css'  href='https://www.osgi.org/wp-content/plugins/vertical-news-scroller/css/newsscrollcss.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-easy-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3Aregular%2C700%2C600&#038;subset=latin%2Call&#038;ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_parent-css'  href='https://www.osgi.org/wp-content/themes/magazine-basic/style.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://www.osgi.org/wp-content/themes/magazine-basic/css/bootstrap.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='google_fonts-css'  href='//fonts.googleapis.com/css?family=Cantata+One|Lato:300,700' type='text/css' media='all' />
+<link rel='stylesheet' id='theme_stylesheet-css'  href='https://www.osgi.org/wp-content/themes/magazine-basic-child-305/style.css?ver=1.0.1448209966' type='text/css' media='all' />
+<link rel='stylesheet' id='font_awesome-css'  href='https://www.osgi.org/wp-content/themes/magazine-basic/library/css/font-awesome.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wptt_front-css'  href='https://www.osgi.org/wp-content/plugins/wp-twitter-feeds/controller/../css/admin_style.min.css?ver=4.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.osgi.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/plugins/easy-social-icons/js/cnss.js?ver=1.0'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/plugins/vertical-news-scroller/js/jv.js?ver=4.9.1'></script>
+<link rel='https://api.w.org/' href='https://www.osgi.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.osgi.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.osgi.org/wp-includes/wlwmanifest.xml" /> 
+<link rel="canonical" href="https://www.osgi.org/developer/design/guidelines/" />
+<link rel='shortlink' href='https://www.osgi.org/?p=467' />
+<link rel="alternate" type="application/json+oembed" href="https://www.osgi.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.osgi.org%2Fdeveloper%2Fdesign%2Fguidelines%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.osgi.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.osgi.org%2Fdeveloper%2Fdesign%2Fguidelines%2F&#038;format=xml" />
+<style type="text/css">
+		ul.cnss-social-icon li.cn-fa-icon a:hover{opacity: 0.7!important;color:#ffffff!important;}
+		</style><style>
+#site-title a,#site-description{color:#333 !important}
+#page{background-color:#ffffff}
+.entry-meta a,.entry-content a,.widget a{color:#3D97C2}
+</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://www.osgi.org/wp-content/themes/magazine-basic/library/images/solid.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+<link rel="icon" href="https://www.osgi.org/wp-content/uploads/favicon.png" sizes="32x32" />
+<link rel="icon" href="https://www.osgi.org/wp-content/uploads/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.osgi.org/wp-content/uploads/favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.osgi.org/wp-content/uploads/favicon.png" />
+<style id="tt-easy-google-font-styles" type="text/css">p { font-family: 'Raleway'; font-style: normal; font-weight: 400; }
+h1 { font-family: 'Raleway'; font-style: normal; font-weight: 400; }
+h2 { font-family: 'Raleway'; font-style: normal; font-weight: 400; }
+h3 { font-family: 'Raleway'; font-style: normal; font-weight: 700; text-transform: capitalize; }
+h4 { font-family: 'Raleway'; font-style: normal; font-weight: 400; }
+h5 { font-family: 'Raleway'; font-style: normal; font-weight: 400; }
+h6 { font-family: 'Raleway'; font-style: normal; font-weight: 400; }
+.blogroll li a { color: #025c8e!important; font-family: 'Raleway'!important; font-style: normal!important; font-weight: 600!important; line-height: 0.8!important; }
+#site-navigation,#site-sub-navigation { font-family: 'Raleway'!important; font-style: normal!important; font-weight: 400!important; }
+body.custom-font-enabled,body { font-family: 'Raleway'!important; font-style: normal!important; font-weight: 400!important; }
+</style></head>
+
+<body class="page-template-default page page-id-467 page-child parent-pageid-322 custom-background">
+	<div id="page" class="grid ">
+		<header id="header" class="row" role="banner">
+			<div class="c12">
+				<nav id="site-top-navigation" role="navigation">
+					<div class="menu-top-container"><ul id="menu-top" class="top-nav-menu"><li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-12"><a href="https://www.osgi.org/">HOME</a>
+<li id="menu-item-1915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1915"><a href="https://www.osgi.org/contact-2/">CONTACT</a>
+<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="https://osgi.org/members/">MEMBER AREA</a>
+</ul></div>				</nav><!-- #site-sub-navigation -->
+
+				<div id="mobile-menu">
+					<a href="#" class="left-menu"><i class="fa fa-reorder"></i></a>
+					<a href="#"><i class="fa fa-search"></i></a>
+				</div>
+				<div id="drop-down-search"><form role="search" method="get" id="searchform" class="slide" action="https://www.osgi.org/" >
+      <div>
+        <input type="text" name="s" id="s" value="search" onblur="if(this.value == &#39;&#39;) { this.value = &#39;search&#39;; }" onfocus="if(this.value == &#39;search&#39;) { this.value = &#39;&#39;; }"  />
+ <input type="image" src="https://www.osgi.org/wp-content/uploads/search.jpg" id="searchsubmit"   />
+</div>
+    </form></div>
+
+								<div class="title-logo-wrapper fl">
+											<a href="https://www.osgi.org" title="OSGi™ Alliance" id="site-logo"  rel="home"><img src="https://www.osgi.org/wp-content/uploads/OSGi-Header-Logo-e1463514096111.jpg" alt="OSGi™ Alliance" /></a>
+										<div class="header-group">
+						<h1 id="site-title" class="remove"><a href="https://www.osgi.org" title="OSGi™ Alliance" rel="home">OSGi™ Alliance</a></h1>
+						<h2 id="site-description">The Dynamic Module System for Java</h2>					</div>
+<div class="ssalignright"><div id="social"><ul id="" class="cnss-social-icon " style="text-align:;"><li class="cn-fa-twitter" style="display:inline-block;"><a class="" target="_blank" href="https://twitter.com/OSGiAlliance" title="Twitter" style=""><img src="https://www.osgi.org/wp-content/uploads/twitter.jpg" border="0" width="24" height="24" alt="Twitter" title="Twitter" style="margin:3px;" /></a></li><li class="cn-fa-xing" style="display:inline-block;"><a class="" target="_blank" href="https://www.xing.com/communities/groups/osgi-1012082" title="Xing" style=""><img src="https://www.osgi.org/wp-content/uploads/other.jpg" border="0" width="24" height="24" alt="Xing" title="Xing" style="margin:3px;" /></a></li><li class="cn-fa-linked-in" style="display:inline-block;"><a class="" target="_blank" href="https://www.linkedin.com/company/osgi-alliance" title="Linked In" style=""><img src="https://www.osgi.org/wp-content/uploads/linkedin.jpg" border="0" width="24" height="24" alt="Linked In" title="Linked In" style="margin:3px;" /></a></li><li class="cn-fa-github" style="display:inline-block;"><a class="" target="_blank" href="https://github.com/osgi" title="GitHub" style=""><img src="https://www.osgi.org/wp-content/uploads/GitHub-Mark-32px.png" border="0" width="24" height="24" alt="GitHub" title="GitHub" style="margin:3px;" /></a></li></ul></div><div id="search"><form role="search" method="get" id="searchform" class="slide" action="https://www.osgi.org/" >
+      <div>
+        <input type="text" name="s" id="s" value="search" onblur="if(this.value == &#39;&#39;) { this.value = &#39;search&#39;; }" onfocus="if(this.value == &#39;search&#39;) { this.value = &#39;&#39;; }"  />
+ <input type="image" src="https://www.osgi.org/wp-content/uploads/search.jpg" id="searchsubmit"   />
+</div>
+    </form></div></div>
+	
+				</div>
+
+						
+				<div id="nav-wrapper">
+					<div class="nav-content">
+						<nav id="site-navigation" class="menus clearfix" role="navigation">
+							<h3 class="screen-reader-text">Main menu</h3>
+							<a class="screen-reader-text" href="#primary" title="Skip to content">Skip to content</a>
+							<div id="main-menu" class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-1698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1698"><a href="#">About us</a>
+<ul class="sub-menu">
+	<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://www.osgi.org/about-us/">About Us</a>
+	<li id="menu-item-309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-309"><a href="https://www.osgi.org/about-us/mission/">Mission</a>
+	<li id="menu-item-23043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23043"><a href="https://www.osgi.org/about-us/testimonials/">OSGi Testimonials</a>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="https://www.osgi.org/about-us/members/">Members</a>
+	<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-parent menu-item-307"><a href="https://www.osgi.org/about-us/board-officers/">Board &#038; Officers</a>
+	<ul class="sub-menu">
+		<li id="menu-item-21061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21061"><a href="https://www.osgi.org/about-us/board-officers/">Board &#038; Officers</a>
+		<li id="menu-item-19054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19054"><a href="/about-us/board-officers/#lec">Liaison Executive Committee</a>
+	</ul>
+
+	<li id="menu-item-306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"><a href="https://www.osgi.org/about-us/fellows-laureates/">Fellows &#038; Laureates</a>
+	<li id="menu-item-1910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1910"><a href="#">Expert Groups</a>
+	<ul class="sub-menu">
+		<li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"><a href="https://www.osgi.org/about-us/working-groups/">Expert Groups</a>
+		<li id="menu-item-313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-313"><a href="https://www.osgi.org/about-us/working-groups/core-platform/">Core Platform</a>
+		<li id="menu-item-312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-312"><a href="https://www.osgi.org/about-us/working-groups/enterprise/">Enterprise</a>
+		<li id="menu-item-1855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="https://www.osgi.org/about-us/working-groups/internet-of-things/">Internet of Things</a>
+		<li id="menu-item-311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-311"><a href="https://www.osgi.org/about-us/working-groups/residential/">Residential</a>
+		<li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://www.osgi.org/about-us/working-groups/marketing/">Marketing</a>
+		<li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="https://www.osgi.org/about-us/working-groups/requirements/">Requirements</a>
+	</ul>
+
+	<li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304"><a href="https://www.osgi.org/about-us/liaisons/">Liaisons &#038; Associates</a>
+	<li id="menu-item-303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="https://www.osgi.org/about-us/faq/">FAQ</a>
+	<li id="menu-item-20080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20080"><a href="https://www.osgi.org/about-us/mediakit/">OSGi Media Kit</a>
+	<li id="menu-item-301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-301"><a href="https://www.osgi.org/contact-2/">Contact</a>
+</ul>
+
+<li id="menu-item-1699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1699"><a href="#">Developer</a>
+<ul class="sub-menu">
+	<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-29"><a href="https://www.osgi.org/developer/">Developer</a>
+	<li id="menu-item-329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="https://www.osgi.org/developer/architecture/">Architecture</a>
+	<li id="menu-item-330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a href="https://www.osgi.org/developer/benefits-of-using-osgi/">Benefits of Using OSGi</a>
+	<li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="https://www.osgi.org/developer/where-to-start/">Where to Start</a>
+	<li id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"><a href="https://www.osgi.org/developer/downloads/">Downloads</a>
+	<li id="menu-item-1911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1911"><a href="#">Specifications</a>
+	<ul class="sub-menu">
+		<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a href="https://www.osgi.org/developer/specifications/">Specifications</a>
+		<li id="menu-item-521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a href="https://www.osgi.org/developer/specifications/licensing/">Licensing</a>
+		<li id="menu-item-510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510"><a href="https://www.osgi.org/developer/specifications/drafts/">Drafts</a>
+		<li id="menu-item-514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514"><a href="https://www.osgi.org/developer/specifications/reference/">Reference</a>
+		<li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="https://www.osgi.org/developer/specifications/review-specifications/">Review Specifications</a>
+		<li id="menu-item-1403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1403"><a target="_blank" href="https://osgi.org/bugzilla/buglist.cgi?bug_status=__open__">Bugs &#038; Issues</a>
+	</ul>
+
+	<li id="menu-item-325" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-325"><a href="https://www.osgi.org/developer/design/">Design Ideas</a>
+	<li id="menu-item-11347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11347"><a href="https://www.osgi.org/developer/resources/learning-resources-tutorials/">Tutorials</a>
+	<li id="menu-item-11414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11414"><a href="https://www.osgi.org/developer/resources/learning-resources-tutorials/">Learning Resources</a>
+	<li id="menu-item-324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-324"><a href="https://www.osgi.org/developer/white-papers/">White Papers</a>
+</ul>
+
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-parent menu-item-28"><a href="https://www.osgi.org/business/">Business</a>
+<ul class="sub-menu">
+	<li id="menu-item-1847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1847"><a href="https://www.osgi.org/business/">Business</a>
+	<li id="menu-item-1912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1912"><a href="#">Markets and Solutions</a>
+	<ul class="sub-menu">
+		<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://www.osgi.org/business/markets-and-solutions/">Markets and Solutions</a>
+		<li id="menu-item-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411"><a href="https://www.osgi.org/business/markets-and-solutions/enterprise/">Enterprise</a>
+		<li id="menu-item-272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="https://www.osgi.org/business/markets-and-solutions/markets-and-solutions%e2%80%8einternet-of-things/">Internet of Things</a>
+		<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="https://www.osgi.org/business/markets-and-solutions/open-source/">Open Source</a>
+		<li id="menu-item-426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426"><a href="https://www.osgi.org/business/markets-and-solutions/mobile/">Mobile</a>
+		<li id="menu-item-432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432"><a href="https://www.osgi.org/business/markets-and-solutions/smart-home/">Smart Home</a>
+		<li id="menu-item-427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427"><a href="https://www.osgi.org/business/markets-and-solutions/telematics/">Telematics</a>
+		<li id="menu-item-431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-431"><a href="https://www.osgi.org/business/markets-and-solutions/e-health/">e-Health</a>
+	</ul>
+
+	<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://www.osgi.org/business/osgi-value-proposition/">OSGi Value Proposition</a>
+	<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="https://www.osgi.org/business/success-stories/">Success Stories</a>
+	<li id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337"><a href="https://www.osgi.org/business/white-papers/">White Papers</a>
+</ul>
+
+<li id="menu-item-1701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1701"><a href="#">OSGi Compliance</a>
+<ul class="sub-menu">
+	<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://www.osgi.org/osgi-compliance/">OSGi Compliance Overview</a>
+	<li id="menu-item-14335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-parent menu-item-14335"><a href="https://www.osgi.org/osgi-compliance/osgi-enabled/get-osgi-enabled/">OSGi Enabled</a>
+	<ul class="sub-menu">
+		<li id="menu-item-14339" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14339"><a href="/osgi-certification/get-osgi-enabled/">OSGi Enabled Overview</a>
+		<li id="menu-item-14336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14336"><a href="https://www.osgi.org/osgi-compliance/osgi-enabled/osgi-enabled-products-and-services/">OSGi Enabled Products and Services</a>
+	</ul>
+
+	<li id="menu-item-14338" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-14338"><a href="/osgi-certification/">OSGi Certification</a>
+	<ul class="sub-menu">
+		<li id="menu-item-21941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21941"><a href="https://www.osgi.org/osgi-compliance/osgi-certification/">OSGi Certification</a>
+		<li id="menu-item-346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-346"><a href="https://www.osgi.org/osgi-compliance/osgi-certification/osgi-certified-products/">OSGi Certified Products</a>
+	</ul>
+
+	<li id="menu-item-1913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1913"><a href="#">Developer Certification</a>
+	<ul class="sub-menu">
+		<li id="menu-item-347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-347"><a href="https://www.osgi.org/osgi-compliance/developer-certification/">Developer Certification</a>
+		<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="https://www.osgi.org/osgi-compliance/developer-certification/professional/">OSGi Developer Certification – Professional</a>
+	</ul>
+
+</ul>
+
+<li id="menu-item-1702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1702"><a href="#">News/Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="https://www.osgi.org/newsevents/">News/Events</a>
+	<li id="menu-item-345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-345"><a href="https://www.osgi.org/newsevents/alliance-announcements/">Alliance News</a>
+	<li id="menu-item-344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-344"><a href="https://www.osgi.org/newsevents/member-news/">Member News</a>
+	<li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="https://www.osgi.org/newsevents/osgi-in-the-news/">OSGi in the News</a>
+	<li id="menu-item-343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-343"><a href="https://www.osgi.org/newsevents/alliance-newsletters/">Alliance Newsletters</a>
+	<li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><a href="https://www.osgi.org/previous-events/">Previous Events</a>
+</ul>
+
+<li id="menu-item-1703" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1703"><a href="#">Join the Alliance</a>
+<ul class="sub-menu">
+	<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="https://www.osgi.org/join/">Join the Alliance</a>
+	<li id="menu-item-414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414"><a href="https://www.osgi.org/join/membership-benefits/">Membership Benefits &#038; Fees</a>
+	<li id="menu-item-866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-866"><a href="https://www.osgi.org/join/join-today/">Join Today</a>
+	<li id="menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-865"><a href="https://www.osgi.org/join/bylaws-and-ipr-policy/">Bylaws and IPR Policy</a>
+</ul>
+
+<li id="menu-item-1704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub-menu-parent menu-item-1704"><a href="#">Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://www.osgi.org/community/">Community</a>
+	<li id="menu-item-373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373"><a href="https://www.osgi.org/community/osgi-iot-demo/">OSGi IoT Demo</a>
+	<li id="menu-item-7162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7162"><a href="https://www.osgi.org/community/wiki/">OSGi Community Wiki</a>
+	<li id="menu-item-370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="https://www.osgi.org/community/osgi-user-forums/">OSGi User Forums</a>
+	<li id="menu-item-371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://www.osgi.org/community/mail-lists/">Mail Lists</a>
+</ul>
+
+<li id="menu-item-193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-193"><a target="_blank" href="http://enroute.osgi.org">enRoute</a>
+<li id="menu-item-8981" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8981"><a href="http://blog.osgi.org">OSGi Blog</a>
+</ul></div>						</nav><!-- #site-navigation -->
+
+
+
+											</div>
+				</div>
+<div id="marquee"><div id="marqueecontent">
+</div></div>
+
+			</div><!-- .c12 -->
+		</header><!-- #header.row -->
+
+		<div id="main" class="row">	<div id="secondary" class="c5 end" role="complementary">
+		<aside id="advanced_sidebar_menu-3" class="widget-1 widget-first widget advanced-sidebar-menu"><ul class="child-sidebar-menu"><li class="page_item page-item-318"><a href="https://www.osgi.org/developer/architecture/">Architecture</a><li class="page_item page-item-314"><a href="https://www.osgi.org/developer/benefits-of-using-osgi/">Benefits of Using OSGi</a><li class="page_item page-item-319"><a href="https://www.osgi.org/developer/where-to-start/">Where to Start</a><li class="page_item page-item-320"><a href="https://www.osgi.org/developer/downloads/">Downloads</a><li class="page_item page-item-321 page_item_has_children has_children"><a href="https://www.osgi.org/developer/specifications/">Specifications</a>
+<ul class='children'>
+	<li class="page_item page-item-499"><a href="https://www.osgi.org/developer/specifications/licensing/">Licensing</a>	<li class="page_item page-item-500"><a href="https://www.osgi.org/developer/specifications/drafts/">Drafts</a>	<li class="page_item page-item-507"><a href="https://www.osgi.org/developer/specifications/reference/">Reference</a>	<li class="page_item page-item-508"><a href="https://www.osgi.org/developer/specifications/review-specifications/">Review Specifications</a>	<li class="page_item page-item-509"><a href="https://osgi.org/bugzilla/buglist.cgi?bug_status=__open__" rel="nofollow" target="_blank">Bugs &#038; Issues</a></ul>
+<li class="page_item page-item-322 page_item_has_children current_page_ancestor current_page_parent has_children"><a href="https://www.osgi.org/developer/design/">Design Ideas</a>
+<ul class='children'>
+	<li class="page_item page-item-461"><a href="https://www.osgi.org/developer/design/cloud/">Cloud</a>	<li class="page_item page-item-467 current_page_item"><a href="https://www.osgi.org/developer/design/guidelines/">Guidelines</a>	<li class="page_item page-item-468"><a href="https://www.osgi.org/developer/design/lazy-start/">Lazy Start</a></ul>
+<li class="page_item page-item-323"><a href="https://www.osgi.org/developer/white-papers/">White Papers</a><li class="page_item page-item-446 page_item_has_children has_children"><a href="https://www.osgi.org/developer/resources/">Resources</a>
+<ul class='children'>
+	<li class="page_item page-item-9356 page_item_has_children has_children"><a href="https://www.osgi.org/developer/resources/learning-resources-tutorials/">Learning Resources &#038; Tutorials</a>
+	<ul class='children'>
+		<li class="page_item page-item-11341"><a href="https://www.osgi.org/developer/resources/learning-resources-tutorials/tutorial-archive/">Tutorial Archive</a>	</ul>
+	<li class="page_item page-item-449"><a href="https://www.osgi.org/developer/resources/books/">Books</a>	<li class="page_item page-item-451"><a href="https://www.osgi.org/developer/resources/developer-kits/">Developer Kits</a>	<li class="page_item page-item-452"><a href="https://www.osgi.org/developer/resources/research/">Research</a></ul>
+</ul><!-- End .child-sidebar-menu --></aside><div class="extra"></div>
+	</div><!-- #secondary.widget-area -->
+
+		<div id="primary" class="c7" role="main">
+<!--  START EDIT -->
+<!--  END EDIT -->
+			<article id="post-467" class="post-467 page type-page status-publish hentry">
+		<h1 class="entry-title">Guidelines</h1>
+	    <div class="entry-content">
+		    <p>There is no single best way to design a Java API for use with the OSGi environment. But here is some advice.</p>
+<h3>Interface-based API design</h3>
+<p>A good practice is to use interfaces to allow alternative implementations of the interfaces and to limit the use of static methods to a single factory method (or very limited number) to generate a <em>root</em> object from which all other interactions are via interfaces. In a design like this, the <em>root</em>object can be registered as a service in the OSGi service registry and the static factory method can then be reimplemented, when deployed in an OSGi environment, to obtain the <em>root</em> object from the OSGi service registry. This allows replacement implementations if the API. This is the model that was used for JSRs <a class="urllink" href="http://jcp.org/en/jsr/detail?id=232">232</a> and <a class="urllink" href="http://jcp.org/en/jsr/detail?id=246">246</a> to co-design the OMA DMT API and is also used by the OSGi XML Parser Service specification to access parser implementations.</p>
+<p class="vspace">Sometimes there can be a <em>religious</em> issue between proponents of interface-based or (final) class-based design. The OSGi environment is mostly predicated on the interface-based design model which separates design from implementation thus allowing many implementors of the API. The interface-based design is a more SOA model of API design.</p>
+	    </div><!-- .entry-content -->
+
+	        <footer class="entry">
+	    	</footer><!-- .entry -->
+	
+	</article><!-- #post-467 -->
+<div id="comments" class="comments-area">
+
+	
+	
+	
+</div><!-- #comments .comments-area -->	</div><!-- #primary -->
+
+	</div> <!-- #main.row -->
+
+<footer id="footer" role="contentinfo">
+
+	<div id="footer-content" class="grid ">
+		<div class="row">
+
+									<div id="footer-widgets">
+						<aside id="linkcat-0" class="widget-1 widget-first header-widget widget_links"><h3 class="header-widget-title">Bookmarks</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="/product-spotlights/">Product Spotlights</a></li>
+<li><a href="http://enroute.osgi.org" target="_blank">OSGi Quick Start</a></li>
+<li><a href="/about-us/working-groups/">Make OSGi Work for You</a></li>
+<li><a href="/business/markets-and-solutions/markets-and-solutions%E2%80%8Einternet-of-things/">Internet of Things</a></li>
+<li><a href="/business/markets-and-solutions/enterprise/">Enterprise</a></li>
+<li><a href="/developer/design/cloud/">Cloud</a></li>
+<li><a href="http://blog.osgi.org">OSGi Blog</a></li>
+
+	</ul>
+</aside>
+					</div>
+
+<div id="footersocial"><ul id="" class="cnss-social-icon " style="text-align:;"><li class="cn-fa-twitter" style="display:inline-block;"><a class="" target="_blank" href="https://twitter.com/OSGiAlliance" title="Twitter" style=""><img src="https://www.osgi.org/wp-content/uploads/twitter.jpg" border="0" width="24" height="24" alt="Twitter" title="Twitter" style="margin:3px;" /></a></li><li class="cn-fa-xing" style="display:inline-block;"><a class="" target="_blank" href="https://www.xing.com/communities/groups/osgi-1012082" title="Xing" style=""><img src="https://www.osgi.org/wp-content/uploads/other.jpg" border="0" width="24" height="24" alt="Xing" title="Xing" style="margin:3px;" /></a></li><li class="cn-fa-linked-in" style="display:inline-block;"><a class="" target="_blank" href="https://www.linkedin.com/company/osgi-alliance" title="Linked In" style=""><img src="https://www.osgi.org/wp-content/uploads/linkedin.jpg" border="0" width="24" height="24" alt="Linked In" title="Linked In" style="margin:3px;" /></a></li><li class="cn-fa-github" style="display:inline-block;"><a class="" target="_blank" href="https://github.com/osgi" title="GitHub" style=""><img src="https://www.osgi.org/wp-content/uploads/GitHub-Mark-32px.png" border="0" width="24" height="24" alt="GitHub" title="GitHub" style="margin:3px;" /></a></li></ul></div>
+<div class="footer">
+				<p> Copyright © 2018 
+					OSGi™ Alliance. Comments about the site? &nbsp;Send them to: <a href="mailto:webadmin@osgi.org">OSGi Alliance WebMaster</a>.
+		<br />
+2400 Camino Ramon, Suite 375 San Ramon, CA 94583 USA<a></a>| <a href="mailto:help@osgi.org">help@osgi.org</a>
+		<br />
+				<a class="urllink" href="https://www.osgi.org">Home</a> | <a class="urllink" href="https://www.osgi.org/sitemap/">Site Map</a> | <a class="urllink" href="https://www.osgi.org/TrademarkPolicy">Trademark Policy</a> | <a class="urllink" href="https://www.osgi.org/mediakit">OSGi Media Kit</a> | <a class="urllink" href="https://www.osgi.org/PrivacyPolicy">Privacy Policy</a>
+</p>
+			</div>
+
+
+<!-- .row -->
+	</div><!-- #footer-content.grid -->
+
+</footer><!-- #footer -->
+</div> <!-- #page.grid -->
+
+<script>
+$( "#primary, #secondary, #tertiary" ).addClass( "third" );
+$('#verticalscroll-4').wrapInner('<div class="wrap" />');
+</script>
+<script type='text/javascript' src='https://www.osgi.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/plugins/accordion-pro/assets/js/bootstrap.js?ver=4.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qpprFrontData = {"linkData":{"https:\/\/www.osgi.org\/developer\/specifications\/bugs-issues\/":[1,1,"https:\/\/osgi.org\/bugzilla\/buglist.cgi?bug_status=__open__"],"https:\/\/www.osgi.org\/community\/osgi-community-wiki\/":[1,1,"http:\/\/wiki.osgi.org\/wiki\/Main_Page"],"https:\/\/www.osgi.org\/about-us\/board-officers\/liaison-executive-committee\/":[0,0,""],"https:\/\/www.osgi.org\/osgi-compliance\/osgi-enabled\/":[0,0,""]},"siteURL":"https:\/\/www.osgi.org","siteURLq":"https:\/\/www.osgi.org"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/plugins/quick-pagepost-redirect-plugin/js/qppr_frontend_script.min.js?ver=5.1.8'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/js/slick.min.js?ver=20170912'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/js/remodal.js?ver=20170912'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/plugins/sp-testimonial/assets/js/isotope.pkgd.min.js?ver=20170912'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/themes/magazine-basic-child-305/js/jquery.matchHeight-min.js?ver=1'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/themes/magazine-basic-child-305/js/matchheight-init.js?ver=1'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-content/themes/magazine-basic/library/js/theme.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.osgi.org/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+</body>
+</html>
