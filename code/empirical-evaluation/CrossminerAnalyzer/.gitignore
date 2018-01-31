@@ -1,0 +1,9 @@
+bin/
+*.class
+.metadata
+local.properties
+.settings/
+.loadpath
+.recommenders
+data/*
+tests/data/m3/*
