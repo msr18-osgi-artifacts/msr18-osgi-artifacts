@@ -6,7 +6,7 @@ The current repository hosts all the artifacts related to the article **An Empir
 This folder contains all the code that supports the current research. It is divided in two subdirectories: 
 
 1. **systematic-review**: hosts the Java project employed during the automatic phases of the Systematic Review (SR). This project was built with the only purpose of supporting the authors with the selection and extraction phase of our SR resources (it is not yet plan to be reused by other projects).
-2. **empirical-evaluation**: hosts two packages: one package with a Rascal/Java project meant to create the OSGi model from a given corpus of bundles and perform the correponding transformations (according to the presented best practices); and another package with the trackers (Eclipse plug-ins) used to get bundles classpath size and resolution time, as well as the standalone Equinox environment employed to run the research tests.
+2. **empirical-evaluation**: one package with a Rascal/Java project meant to create the OSGi model from a given corpus of bundles and perform the correponding transformations (according to the presented best practices).
 
 ## corpora
 This folder hosts the seven corpora used during our empirical evaluation. These corpora are the output of the transformations allocated in one of the *code/empirical-evaluation* projects.
@@ -23,4 +23,4 @@ This folder hosts the seven corpora used during our empirical evaluation. These 
 This folder contains all results related to our SR and empirical evaluation. It is also (unsurprisingly) divided in two directories:
 
 1. **systematic-review**: contains the original files of the selected web resources, as well as a XSLX file (i.e. *results.xslx*) with the results obtained during the different phases of the SR study selection. 
-2. **empirical-evaluation**: contains a folder per corpus (initial and transformed corpora) with the trackers generated results (CVS files). Each folder also tabulates all classpath size and resolution time results in a file named *comparison-[corpous-name].xlsx*. Final results of the whole study are gathered in the *results.xlsx* file. 
+2. **empirical-evaluation**: contains a folder per corpus (initial and transformed corpora) with the trackers generated results (CVS files). Each folder also tabulates all classpath size and resolution time results in a file named *comparison-[corpus-name].xlsx*. Final results of the whole study are gathered in the *results.xlsx* file. 
